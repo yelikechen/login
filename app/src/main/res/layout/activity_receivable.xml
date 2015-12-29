@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <TextView
+            android:text="后退"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_back"
+            />
+        <TextView
+            android:gravity="center"
+            android:text="收款"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:background="#0F0F0F"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:text="应收款项:"
+        android:textSize="20sp"
+        android:id="@+id/tv_receivable"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="已收款项:"
+            android:textSize="20sp"
+            android:id="@+id/tv_received"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_received"
+            android:text="0.00"
+            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:text="提交"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="query">
+        <item>按客户查询</item>
+        <item>按订单号查询</item>
+    </string-array>
+</resources>

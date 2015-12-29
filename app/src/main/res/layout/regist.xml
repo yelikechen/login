@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <TextView
+            android:gravity="center"
+            android:text="后退"
+            android:textColor="#ffffff"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="配置IP"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/ed_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入IP地址和端口,如:120.26.61.117:88"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_gravity="center"
+        android:text="提交"
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

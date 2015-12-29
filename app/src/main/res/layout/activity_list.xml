@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_title"
+        android:background="#000000">
+
+        <TextView
+            android:text="后退"
+
+            android:textColor="#ffffff"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btn_back"
+            />
+        <TextView
+            android:gravity="center"
+            android:text="获取订单"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal|top" />
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_query"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/btn_dataquery"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_menu_search_holo_light"
+            android:layout_weight="0.00" />
+       <EditText
+           android:singleLine="true"
+           android:id="@+id/et_query"
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_query"
+            android:text="查询"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@+id/ll_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_neirong">
+        <TextView
+            android:text="没有记录"
+            android:id="@+id/tv_no"
+            android:layout_below="@+id/ll_query"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.ye.com.loginDome.list.SwipeMenuListView
+            android:layout_below="@+id/ll_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_order"
+            android:descendantFocusability="afterDescendants"
+            android:layout_gravity="center_horizontal" />
+    </FrameLayout>
+
+</RelativeLayout>
